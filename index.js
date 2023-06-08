@@ -1,8 +1,8 @@
 /* ================== Book Management ============= */
-
 import displayBooks from './modules/BookManager.js';
 import addBook from './modules/AddBook.js';
 import removeBook from './modules/RemoveBook.js';
+import { DateTime } from './node_modules/luxon/src/luxon.js';
 
 displayBooks();
 
@@ -14,6 +14,12 @@ document.getElementById('bookList').addEventListener('click', (event) => {
     removeBook(index);
   }
 });
+
+/* ============== Import Date and time from Luxon =========== */
+const dt = DateTime.now();
+const date = document.getElementById('today');
+
+date.innerHTML = dt.toLocaleString(DateTime.DATETIME_MED);
 
 /* ============== Navigation ================= */
 
