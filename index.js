@@ -14,33 +14,3 @@ document.getElementById('bookList').addEventListener('click', (event) => {
     removeBook(index);
   }
 });
-
-/* ============== Navigation ================= */
-
-// Control which section to show
-const list = document.getElementById('navList');
-const navAdd = document.getElementById('navAddNew');
-const navContact = document.getElementById('navContact');
-
-// Three main sections
-const mainSection = document.getElementById('allBooks');
-const addBookSection = document.getElementById('add-new');
-const contactSection = document.getElementById('contact');
-
-list.addEventListener('click', () => {
-  mainSection.classList.remove('hidden');
-  addBookSection.classList.add('hidden');
-  contactSection.classList.add('hidden');
-});
-
-navAdd.addEventListener('click', () => {
-  mainSection.classList.add('hidden');
-  addBookSection.classList.remove('hidden');
-  contactSection.classList.add('hidden');
-});
-
-navContact.addEventListener('click', () => {
-  mainSection.classList.add('hidden');
-  addBookSection.classList.add('hidden');
-  contactSection.classList.remove('hidden');
-});
