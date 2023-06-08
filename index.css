@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+/* ============= Navigation ============= */
+
+header {
+  border: 3px solid #923131;
+  margin: 2em 15em 1em 15em;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 25px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  list-style-type: none;
+  margin: auto 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-size: 20px;
+  border-right: 3px solid #923131;
+  padding: 0 1em;
+}
+
+.date {
+  margin: 0 15em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ============= All Books Section ========== */
+
+.heading {
+  text-align: center;
+  margin: 2em 0.7em 1em 0.7em;
+  font-size: 32px;
+}
+
+.book-list {
+  width: 50%;
+  margin: auto;
+  border: 3px solid #923131;
+  border-radius: 5px;
+}
+
+.book {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 13px;
+}
+
+span {
+  font-size: 18px;
+}
+
+.book:nth-child(even) {
+  background-color: #c09090;
+}
+
+.book:nth-child(odd) {
+  background-color: #f1e1e1;
+}
+
+/* ========= Add new Book Section ============= */
+
+.bookInput {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 25%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  position: relative;
+  width: 100%;
+  padding: 1.5em 1em;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  transition: transform 0.3s ease-in-out;
+}
+
+input:hover::placeholder {
+  transform: translateX(10px);
+}
+
+button {
+  padding: 15px;
+  background-color: #923131;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.04);
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ===== Contact Section ======== */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.contact-container p,
+.contact-container ul li {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ===== Footer Section ======== */
+
+footer {
+  width: 74%;
+  border: 3px solid #923131;
+  margin: 0 auto 1em auto;
+  border-radius: 5px;
+  padding: 1.2em 1em;
+}
