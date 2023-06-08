@@ -1,9 +1,9 @@
 import bookCollection from './BookCollection.js';
 import displayBooks from './BookManager.js';
 
-function removeBook(index) {
+const removeBook = (index) => {
   bookCollection.removeBook(index);
   displayBooks();
-}
+};
 
 export default removeBook;

@@ -1,6 +1,6 @@
 import bookCollection from './BookCollection.js';
 
-function displayBooks() {
+const displayBooks = () => {
   const bookList = document.getElementById('bookList');
   bookList.innerHTML = '';
 
@@ -18,6 +18,6 @@ function displayBooks() {
     `;
     bookList.appendChild(bookElement);
   });
-}
+};
 
 export default displayBooks;

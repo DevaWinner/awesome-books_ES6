@@ -1,7 +1,7 @@
 import bookCollection from './BookCollection.js';
 import displayBooks from './BookManager.js';
 
-function addBook() {
+const addBook = () => {
   const titleInput = document.getElementById('title');
   const authorInput = document.getElementById('author');
   const title = titleInput.value.trim();
@@ -13,6 +13,6 @@ function addBook() {
     authorInput.value = '';
     displayBooks();
   }
-}
+};
 
 export default addBook;
