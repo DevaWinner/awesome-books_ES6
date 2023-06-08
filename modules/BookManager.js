@@ -1,11 +1,10 @@
-
 import bookCollection from './BookCollection.js';
 
 function displayBooks() {
   const bookList = document.getElementById('bookList');
   bookList.innerHTML = '';
 
-  bookCollection.getBooks().forEach((book, index) => {
+  bookCollection.getBooks().forEach((book) => {
     const bookElement = document.createElement('div');
     bookElement.classList.add('book');
     bookElement.innerHTML = `
@@ -21,4 +20,4 @@ function displayBooks() {
   });
 }
 
-export { displayBooks };
+export default displayBooks;

@@ -1,5 +1,5 @@
 import bookCollection from './BookCollection.js';
-import { displayBooks } from './BookManager.js';
+import displayBooks from './BookManager.js';
 
 function addBook() {
   const titleInput = document.getElementById('title');

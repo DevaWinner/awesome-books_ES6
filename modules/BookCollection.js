@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 import Book from './Book.js';
 
 class BookCollection {
